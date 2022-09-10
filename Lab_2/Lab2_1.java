@@ -20,20 +20,20 @@ public class Lab2_1 {
         double y = 24.9 * (height * 2);
 
         if (mbi < 18.5) {
-            System.out.println("Your MBI is: \t" + roundOff + "\n--->Underweight");
+            System.out.println("Your MBI is:\t" + roundOff + "\n--->Underweight");
             System.out.println("You should increase at least:\t" + (int) (x - weight) + "(kg) to " + (int) (y - weight) + "(kg)");
         } else if (mbi <= 24.9) {
-            System.out.println("Your MBI is: \t" + roundOff + "\n--->Normal weight");
+            System.out.println("Your MBI is:\t" + roundOff + "\n--->Normal weight");
             System.out.println("You have a good health. Keep Goging!!");
         } else if (mbi <= 29.9) {
-            System.out.println("Your MBI is: \t" + roundOff + "\n--->Overweight ");
+            System.out.println("Your MBI is:\t" + roundOff + "\n--->Overweight ");
             if ((weight - y) > 1) {
                 System.out.println("You should decrease at least:\t" + (int) (weight - y) + "(kg) to " + (int) (weight - x) + "(kg)    ");
             } else {
                 System.out.println("You have a good health. Keep Goging!!");
             }
         } else {
-            System.out.println("Your MBI is: \t" + roundOff + "\n--->Obesity ");
+            System.out.println("Your MBI is:\t" + roundOff + "\n--->Obesity ");
             System.out.println("You should decrease at least\t" + (int) (weight - y) + "(kg) to " + (int) (weight - x) + "(kg)");
         }
     }
