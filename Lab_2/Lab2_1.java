@@ -8,9 +8,18 @@ public class Lab2_1 {
         double height;
 
 
+
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Your height is (m) (ex: 1m75 -> 1.75): ");
-        height = scanner.nextFloat();
+        while (true) {
+            System.out.print("Your height is (m) (ex: 1m75 -> 1.75): ");
+            height = scanner.nextFloat();
+            if (height >= 3) {
+                System.out.println("Height invalid. Pls enter correct your height!!!");
+            }
+            else {
+                break;
+            }
+        }
         System.out.print("Your weight is (kg): ");
         weight = scanner.nextFloat();
 
