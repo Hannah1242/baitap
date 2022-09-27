@@ -10,10 +10,14 @@ public class Lab6_3 {
         char[] charArray = text.toCharArray();
         String result = "";
         for (char character : charArray) {
-            if(Character.isDigit(character)) {
+            if (Character.isDigit(character)) {
                 result += character;
             }
         }
-        System.out.println("Result: " + result);
+        if (result == "") {
+            System.out.println("Your text has no numbers!!");
+        } else {
+            System.out.println("Result: " + result);
+        }
     }
 }
